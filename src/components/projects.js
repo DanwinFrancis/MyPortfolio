@@ -122,6 +122,63 @@ class Projects extends Component {
                 </div>
             )
         }
+        else if(this.state.activeTab === 2) {
+            return (
+                <div className="project-grid">
+                    {/* Project 1 */}
+                    <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                        <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://img.favpng.com/12/9/4/mongodb-logo-database-nosql-postgresql-png-favpng-mcEPKatsp6vtFjnFRhApvc5Z5.jpg) center / cover'}}>
+                            MongoDB Project #1
+                        </CardTitle>
+                        <CardText>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis ...
+                        </CardText>
+                        <CardActions border>
+                            <Button colored>GitHub</Button>
+                            <Button colored>CodePen</Button>
+                            <Button colored>LiveDemo</Button>
+                        </CardActions>
+                        <CardMenu style={{color: '#fff'}}>
+                            <IconButton name="share"/>
+                        </CardMenu>
+                    </Card>
+                    {/* Project 2 */}
+                    <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                        <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://img.favpng.com/12/9/4/mongodb-logo-database-nosql-postgresql-png-favpng-mcEPKatsp6vtFjnFRhApvc5Z5.jpg) center / cover'}}>
+                            MongoDB Project #2
+                        </CardTitle>
+                        <CardText>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis ...
+                        </CardText>
+                        <CardActions border>
+                            <Button colored>GitHub</Button>
+                            <Button colored>CodePen</Button>
+                            <Button colored>LiveDemo</Button>
+                        </CardActions>
+                        <CardMenu style={{color: '#fff'}}>
+                            <IconButton name="share"/>
+                        </CardMenu>
+                    </Card>
+                    {/* Project 3 */}
+                    <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                        <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://img.favpng.com/12/9/4/mongodb-logo-database-nosql-postgresql-png-favpng-mcEPKatsp6vtFjnFRhApvc5Z5.jpg) center / cover'}}>
+                            MongoDB Project #3
+                        </CardTitle>
+                        <CardText>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis ...
+                        </CardText>
+                        <CardActions border>
+                            <Button colored>GitHub</Button>
+                            <Button colored>CodePen</Button>
+                            <Button colored>LiveDemo</Button>
+                        </CardActions>
+                        <CardMenu style={{color: '#fff'}}>
+                            <IconButton name="share"/>
+                        </CardMenu>
+                    </Card>
+                </div>
+            )
+        }
     
     }
 
@@ -131,6 +188,7 @@ class Projects extends Component {
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId})} ripple>
                     <Tab>React</Tab>
                     <Tab>Angular</Tab>                    
+                    <Tab>MongoDB</Tab>                    
                 </Tabs>
 
                 <Grid>
