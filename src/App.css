@@ -103,3 +103,16 @@
   font-size: 66px;
   padding-right: 5rem;
 }
+
+.resume-left-col hr {
+  width: 75%;
+  border-top: 3px solid #833fb2;
+  margin: auto;
+  padding-bottom: 1em;
+}
+
+.resume-right-col {
+  background: #27221F;
+  color: white;
+  padding: 2em;
+}
